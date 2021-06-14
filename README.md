@@ -1,3 +1,3 @@
 # SwiftZwiftPacketMonitor
 
-A description of this package.
+A Swift port of the ZwiftPacketMontor
