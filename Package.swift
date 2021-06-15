@@ -12,7 +12,6 @@ let package = Package(
             targets: ["SwiftZwiftPacketMonitor"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
         .package(name: "SwiftProtobuf", url: "https://github.com/apple/swift-protobuf.git", from: "1.16.0"),
     ],
     targets: [
@@ -20,7 +19,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SwiftZwiftPacketMonitor",
-            dependencies: []),
+            dependencies: ["SwiftProtobuf"]),
         .testTarget(
             name: "SwiftZwiftPacketMonitorTests",
             dependencies: ["SwiftZwiftPacketMonitor"]),
